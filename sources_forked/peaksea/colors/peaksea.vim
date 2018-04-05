@@ -43,7 +43,8 @@ if &background=='light'
   " for background=light {{{2
   " LIGHT COLOR DEFINE START
 
-  hi Normal		guifg=#000000	guibg=#e0e0e0	gui=NONE
+  " hi Normal		guifg=#000000	guibg=#e0e0e0	gui=NONE
+  hi Normal		guifg=#000000	gui=NONE
   hi Search		guifg=White	guibg=DarkRed	gui=NONE
   hi Visual		guifg=NONE	guibg=#a6caf0	gui=NONE
   hi Cursor		guifg=#f0f0f0	guibg=#008000	gui=NONE
@@ -156,9 +157,9 @@ if &background=='light'
   if &t_Co==256
     " 256color light terminal support here
 
-    hi Normal		ctermfg=16	ctermbg=254	cterm=NONE
+    "hi Normal		ctermfg=16	ctermbg=254	cterm=NONE
     " Comment/Uncomment the following line to disable/enable transparency
-    "hi Normal		ctermfg=16	ctermbg=NONE	cterm=NONE
+    hi Normal		ctermfg=16	ctermbg=NONE	cterm=NONE
     hi Search		ctermfg=White	ctermbg=DarkRed	cterm=NONE
     hi Visual		ctermfg=NONE	ctermbg=153	cterm=NONE
     hi Cursor		ctermfg=255	ctermbg=28	cterm=NONE
@@ -259,7 +260,8 @@ elseif &background=='dark'
   " for background=dark {{{2
   " DARK COLOR DEFINE START
 
-  hi Normal		guifg=#d0d0d0	guibg=#202020	gui=NONE
+  "hi Normal		guifg=#d0d0d0	guibg=#202020	gui=NONE
+  hi Normal		guifg=#d0d0d0	gui=NONE
   hi Comment		guifg=#d0d090	guibg=NONE	gui=NONE
   hi Constant		guifg=#80c0e0	guibg=NONE	gui=NONE
   hi Number		guifg=#e0c060	guibg=NONE	gui=NONE
@@ -491,9 +493,9 @@ elseif &background=='dark'
     endif
   elseif &t_Co==256
     " 256color dark terminal support here
-    hi Normal		ctermfg=252	ctermbg=234	cterm=NONE
+    "hi Normal		ctermfg=252	ctermbg=234	cterm=NONE
     " Comment/Uncomment the following line to disable/enable transparency
-    "hi Normal		ctermfg=252	ctermbg=NONE	cterm=NONE
+    hi Normal		ctermfg=252	ctermbg=NONE	cterm=NONE
     hi Comment		ctermfg=186	ctermbg=NONE	cterm=NONE
     hi Constant		ctermfg=110	ctermbg=NONE	cterm=NONE
     hi Number		ctermfg=179	ctermbg=NONE	cterm=NONE
